@@ -49,9 +49,9 @@ include: [_pages] # Includes files inside _pages directory [Do not remove this]
 
 author:
   name: Dev-ES
-  image: dev-es-2.png
+  image: logo.png
   about: Staff
-  twitter: devescom
+  twitter: comdeves
   facebook: devescom
   email: joao@joaovrmaia.com
   
