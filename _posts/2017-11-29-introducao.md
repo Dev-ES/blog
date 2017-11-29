@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Intrdodução
+title: Introdução
 description: Como forma de diversificar o conhecimento na comunidade estamos criando esse novo espaço para todos.
-categories: general
+categories: avisos
 author: João Maia
 ---
 

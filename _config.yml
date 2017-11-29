@@ -20,10 +20,10 @@ sass:
   style: compressed
 
 # Comments - Go to Disqus.com > sign up > get the short-name > insert it here
-disqus-shortname: 1 
+disqus-shortname: dev-es-1
 
 # Tracker
-analytics: 1
+analytics: UA-110414822-1
 
 # Form Settings
 #
