@@ -12,7 +12,7 @@ buscando difundir o conhecimento na comunidade estamos hoje começando essa nova
 
 O espaço aqui está aberto a todos que queriam contribuir escrevendo ou pedindo um post sobre determinado assundo que tem interesse e dificuldade.
 
-Você não precisa ser um desenvolvedor, dba, devops, ... Nina Rockstar para escrever nesse espaço! Escrever aqui só vai depender de você querer e ter algo a compilhar.
+Você não precisa ser um desenvolvedor, dba, devops, ... Ninja Rockstar para escrever nesse espaço! Escrever aqui só vai depender de você querer e ter algo a compilhar.
 
 Como vamos começar? Simples, deseja aprender algo? Abra uma issue no repositório e caso conheça alguém que consiga contribuir na sua dúvida marque a pessoa na issue.
 
