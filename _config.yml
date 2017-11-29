@@ -1,0 +1,60 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Dev-ES
+description: > # this means to ignore newlines until "baseurl:"
+ Blog colaborativo da Comunidade Dev-ES
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://blog.dev-es.org"
+permalink: :title/
+full-url: "http://blog.dev-es.org" # the base hostname & protocol for your site
+
+
+# CSS
+sass:
+  style: compressed
+
+# Comments - Go to Disqus.com > sign up > get the short-name > insert it here
+disqus-shortname: 1 
+
+# Tracker
+analytics: 1
+
+# Form Settings
+#
+# Contact form can be enabled by getting an API key from https://getsimpleform.com/
+simpleform-token: 1
+
+# Redirect users after submitting the form
+redirect-to: http://blog.dev-es.org
+
+# Site version
+version: 0.9
+
+
+# Post date background - This will change the background of the post date and tag ribbon according to the theme. If set to no default green background will be used. If yes then the theme color scheme is used.
+
+change-date-bg: no
+
+
+# Build settings
+markdown: kramdown
+
+include: [_pages] # Includes files inside _pages directory [Do not remove this]
+
+author:
+  name: Dev-ES
+  image: dev-es-2.png
+  about: Staff
+  twitter: devescom
+  facebook: devescom
+  email: joao@joaovrmaia.com
+  
+gems: 
+  - jekyll-seo-tag
+  - jekyll-paginate
