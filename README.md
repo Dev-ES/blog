@@ -1,29 +1,21 @@
-Bheema is a theme suitabel for image heavy journal kind of websites. 
+Dev-ES Blog
+----
 
-Demo: [http://webjeda.com/ashwath/](http://webjeda.com/ashwath/)
+# Requisitos
 
+* Ruby 2.4.2p198+
+* [Bundler](http://bundler.io/) (`gem install bundler`)
 
-## Installation
-* Fork the repository
-* Go to settings and set Github Pages source as master.
-* Your new site should be ready.
+# Instalando dependências
 
+    bundle install
 
-## Screenshots
-Default theme:
+# Rodando servidor de teste
 
-![ashwath jekyll theme](http://webjeda.com/ashwath/images/Default.png)
+    bundle exec jekyll s
 
-Color schemes (Full version)
+# Dicas
 
-![ashwath jekyll theme](http://webjeda.com/ashwath/images/Purple.png)
+## Instalação do Ruby
 
-![ashwath jekyll theme](http://webjeda.com/ashwath/images/Blood.png)
-
-![ashwath jekyll theme](http://webjeda.com/ashwath/images/Mango.png)
-
-
-For more themes visit - [https://jekyll-themes.com](https://jekyll-themes.com)
-
-## License
-MIT License
+Usar o [ruby-install](https://github.com/postmodern/ruby-install) para instalar o Ruby e o [chruby](https://github.com/postmodern/chruby) para gerenciar a versão do Ruby.
