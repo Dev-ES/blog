@@ -228,7 +228,7 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 Em alguns momentos precisei executar os comandos passando como argumento o Docker em específico que desejava executar. Caso não tenha percebido mas é possível identificar o Docker de 3 formas:
 
 * ID completo: 4948aa0ce505310fe892bcc5f4bd84670cc898fa9950d81ce2f115c80fc5a717
-* ID simplificado: 4948aa0ce505
+* ID simplificado: 4948aa0ce505 (ou menos, o importante é que a parcial identifique o conteiner, ex: se tivermos somente 494... basta usar o id 4 pra identificá-lo)
 * Apelido: upbeat_johnson
 
 Espero que você agora consiga entender e executar os conceitos básicos de Docker e aplicar no seu dia. Existem muito mais recursos por vir nos próximos posts.
