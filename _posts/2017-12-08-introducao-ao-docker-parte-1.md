@@ -161,6 +161,8 @@ $ docker inspect upbeat_johnson
 ]
 ```
 
+Dica: Abra seu navegador e entre no endereço contido em `NetworkSettings.Networks.IPAddress` na porta 8081 e veja o resultado.
+
 ## Finalizando um Docker
 
 Uma hora será preciso desligar o Docker executado, para isso  existe o `kill` que vai encerrar o Docker via `signal` aKa `Ctrl+C`.
@@ -223,6 +225,12 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 
 # Considerações finais
 
-Espero que você agora consiga entender e executar os conceitos básicos de Docker e aplicar no seu dia.
+Em alguns momentos precisei executar os comandos passando como argumento o Docker em específico que desejava executar. Caso não tenha percebido mas é possível identificar o Docker de 3 formas:
+
+* ID completo: 4948aa0ce505310fe892bcc5f4bd84670cc898fa9950d81ce2f115c80fc5a717
+* ID simplificado: 4948aa0ce505
+* Apelido: upbeat_johnson
+
+Espero que você agora consiga entender e executar os conceitos básicos de Docker e aplicar no seu dia. Existem muito mais recursos por vir nos próximos posts.
 
 Abraços, João
