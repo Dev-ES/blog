@@ -82,7 +82,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 491faaed037c        mysql:5             "docker-entrypoint..."   3 seconds ago       Up 1 second         0.0.0.0:32768->3306/tcp   tender_golick
 ```
 
-O `-p` mapeia todas as portas conhecidas do serviço, ou seja que foi documentado pelo fornecedor da imagem e expoe em porta aleatoria.
+O `-P` mapeia todas as portas conhecidas do serviço, ou seja que foi documentado pelo fornecedor da imagem e expoe em porta aleatoria.
 
 ## Porta específica
 
