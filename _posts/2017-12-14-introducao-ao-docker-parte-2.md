@@ -33,7 +33,7 @@ Status: Downloaded newer image for mysql:5
 
 # Variáveis de ambiente
 
-Na págin do Docker Hub tem um tópico `Environment Variables` onde existe o nome e explicação de todas as varáveis que a imagem do MySQL suporta e sua função. Nesse primeira parte vamos usar apenas a `MYSQL_ROOT_PASSWORD` que define a senha do administrador do MySQL. Vamos ver como funciona na prática:
+Na página do Docker Hub tem um tópico `Environment Variables` onde existe o nome e explicação de todas as varáveis que a imagem do MySQL suporta e sua função. Nesse primeira parte vamos usar apenas a `MYSQL_ROOT_PASSWORD` que define a senha do administrador do MySQL. Vamos ver como funciona na prática:
 
 ```
 $ docker run --rm -d -e MYSQL_ROOT_PASSWORD=secret mysql:5
