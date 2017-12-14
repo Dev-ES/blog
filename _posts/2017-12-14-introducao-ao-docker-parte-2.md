@@ -33,7 +33,7 @@ Status: Downloaded newer image for mysql:5
 
 # Variáveis de ambiente
 
-Na págin do Docker Hub tem um tópico `Environment Variables` onde existe o nome e explicação de todas as varáveis que a imagem do MySQL suporta e sua função. Nesse primeira parte vamos usar apenas a `MYSQL_ROOT_PASSWORD` que define a senha do administrador do MySQL. Vamo ver como funciona na prática:
+Na págin do Docker Hub tem um tópico `Environment Variables` onde existe o nome e explicação de todas as varáveis que a imagem do MySQL suporta e sua função. Nesse primeira parte vamos usar apenas a `MYSQL_ROOT_PASSWORD` que define a senha do administrador do MySQL. Vamos ver como funciona na prática:
 
 ```
 $ docker run --rm -d -e MYSQL_ROOT_PASSWORD=secret mysql:5
@@ -82,7 +82,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 491faaed037c        mysql:5             "docker-entrypoint..."   3 seconds ago       Up 1 second         0.0.0.0:32768->3306/tcp   tender_golick
 ```
 
-A opção `-p` quando você informa apenas uma porta ele apenas faz um bind para alguma porta livre no seu host de forma randômica.
+O `-p` mapeia todas as portas conhecidas do serviço, ou seja que foi documentado pelo fornecedor da imagem e expoe em porta aleatoria.
 
 ## Porta específica
 
