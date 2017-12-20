@@ -43,7 +43,9 @@ change-date-bg: no
 
 
 # Build settings
-markdown: kramdown
+markdown:       kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+highlighter: rouge
 
 include: [_pages] # Includes files inside _pages directory [Do not remove this]
 
