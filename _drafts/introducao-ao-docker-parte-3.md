@@ -60,7 +60,9 @@ Vamos analisar cada item do Dockerfile:
 
 ### FROM
 
-Essa instrução indica apartir de qual imagem a sua vai se basear, no nosso caso como vamos subir uma aplicação Python já peguei uma imagem com o Python instalado para evitar esse processo. Estou usando uma das imagens oficiais do Docker. Nota, sempre que possível use imagens oficiais do Docker, evite usar imagem qualquer por ai na internet e verifique sempre as imagens que você for utilizar. Nada impede que uma pessoa crie uma imagem com software malicioso e divulgue publicamente.
+Essa instrução indica a partir de qual imagem a sua vai se basear, no nosso caso como vamos subir uma aplicação Python. Então, já peguei uma imagem com o Python instalado para evitar esse processo de instalação que pode ser muito complicado dependendo de qual imagem você usar como base. Imagina a complicação de pegar uma imagem crua e ter que instalar todas as dependências para instalar o Python, fazer o download do fonte, compilar e configurar as variáveis de ambiente.
+
+Estou usando uma das imagens oficiais do Docker. Nota, sempre que possível use imagens oficiais do Docker, evite usar imagem qualquer por ai na internet e verifique sempre as imagens que você for utilizar. Nada impede que uma pessoa crie uma imagem com software malicioso e divulgue publicamente. Outra coisa importante, não publique suas imagens que possam conter informação privada, é interessante dentro da infra da sua empresa ter um servidor próprio de registro de imagens mas isso é conversa para outro post.
 
 ### MAINTAINER
 
@@ -72,7 +74,7 @@ LABEL maintainer="joao@joaovrmaia.com"
 
 ### COPY
 
-O `COPY` copia arquivos do seu sistema de arquivos para o Docker bem parecido com o `cp` do terminal do linux. A diferença que ele aceita uma lista igual ao `CMD` do nosso exemplo, para alguns casos. Seu dever de casa é estudar o `ADD` e aprender as diferenças dele para o `COPY`. Observer que no nosso projeto de exemplo tem o arquivo `.dockerignore`, ele é parecido com o `.gitignore` só que para o Docker.
+O `COPY` copia arquivos do seu sistema de arquivos para o Docker bem parecido com o `cp` do terminal do linux. A diferença que ele aceita uma lista igual ao `CMD` do nosso exemplo, para alguns casos. Seu dever de casa é estudar o `ADD` e aprender as diferenças dele para o `COPY`. Observe que no nosso projeto de exemplo tem o arquivo `.dockerignore`, ele é parecido com o `.gitignore` só que para o Docker.
 
 ### RUN
 
@@ -196,6 +198,6 @@ bed4ed93779a        flask-example:0.0.1   "python app.py"     About a minute ago
 
 # Conclusão
 
-Com o fim dessa introdução ao Docker espero que você seja capaz de criar na sua máquina de trabalho réplica de parte ou toda sua infra de produção, por exemplo, criar um Dockerfile que gera a imagem do seu Docker com sua aplicação em Python e subir um banco MongoDB para ser usado pela aplicação. Recomendo agora que você pratique mais o que foi visto aqui e olhe a documentação pois muitas coisas foram omitidas por conta do escopo da introdução.   
+Com o fim dessa introdução ao Docker espero que você seja capaz de criar na sua máquina de trabalho réplica de parte ou toda sua infra de produção, por exemplo, criar um Dockerfile que gera a imagem do seu Docker com sua aplicação em Python e subir um banco MongoDB para ser usado pela aplicação. Recomendo agora que você pratique mais o que foi visto aqui e olhe a documentação pois muitas coisas foram omitidas por conta do escopo da introdução.
 
 Abraços, João
