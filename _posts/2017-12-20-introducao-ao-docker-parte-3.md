@@ -64,6 +64,11 @@ Essa instrução indica a partir de qual imagem a sua vai se basear, no nosso ca
 
 Estou usando uma das imagens oficiais do Docker. Nota, sempre que possível use imagens oficiais do Docker, evite usar imagem qualquer por ai na internet e verifique sempre as imagens que você for utilizar. Nada impede que uma pessoa crie uma imagem com software malicioso e divulgue publicamente. Outra coisa importante, não publique suas imagens que possam conter informação privada, é interessante dentro da infra da sua empresa ter um servidor próprio de registro de imagens mas isso é conversa para outro post.
 
+Como identificar essa diferença entre imagens oficias e de outros usuários:
+
+* imagem normal: `<owner-da-imagem>/<imagem>:<tag ou versao da imagem>`
+* imagem library: `<imagem>:<tag ou versao da imagem>`
+
 ### MAINTAINER
 
 É muito comum encontrar essa entrada no Dockerfile mas ela não vai existir mais em breve. O recomendado agora é usar LABEL. Veja:
