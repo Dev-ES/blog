@@ -8,7 +8,7 @@ author: João Maia
 
 Olá pessoal,
 
-esse é o fim da introdução ao Docker e vamos terminar mostrando como criar o seu próprio Docker. Vamos exemplificar o processo subindo uma aplicação com Flask (Python) que só tem um endpoint e que é o raíz e respode o nome do host que executa a aplicação.
+esse é o fim da introdução ao Docker e vamos terminar mostrando como criar o seu próprio Docker. Vamos exemplificar o processo subindo uma aplicação com Flask (Python) que só tem um endpoint e que é o raíz e responde o nome do host que executa a aplicação.
 
 # Aplicação
 
