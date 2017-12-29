@@ -60,7 +60,7 @@ Vamos analisar cada item do Dockerfile:
 
 ### FROM
 
-Essa instrução indica apartir de qual imagem a sua vai se basear, no nosso caso como vasmos subir uma aplicação Python já peguei uma imagem com o Python instalado para evitar esse processo. Estou usando uma das imagens oficiais do Docker. Nota, sempre que possível use imagens oficiais do Docker, evite usar imagem qualquer por ai na internet e verifique sempre as imagens que você for utilizar. Nada impede que uma pessoa crie uma imagem com software malicioso e divulgue publicamente.
+Essa instrução indica apartir de qual imagem a sua vai se basear, no nosso caso como vamos subir uma aplicação Python já peguei uma imagem com o Python instalado para evitar esse processo. Estou usando uma das imagens oficiais do Docker. Nota, sempre que possível use imagens oficiais do Docker, evite usar imagem qualquer por ai na internet e verifique sempre as imagens que você for utilizar. Nada impede que uma pessoa crie uma imagem com software malicioso e divulgue publicamente.
 
 ### MAINTAINER
 
@@ -84,7 +84,9 @@ O `ENV` permite que você crie variáveis de ambientes padrão, no nosso caso es
 
 ### EXPOSE
 
-O `EXPOSE` permite que você torne visível portas do seu Docker e ainda escolha o protocolo, por padrão é o TCP. No caso de UDP seria:
+O `EXPOSE` permite que você torne visível portas do seu Docker para o máquina host e ainda escolha o protocolo. Isso vai permitir que ao executar o `docker run` com o argumento `-P` sua portas descritas no `EXPOSE` sejam exportadas fazendo uma ponte entre o host e Docker.
+
+Por padrão o protocolo usado é o TCP caso vocÊ informe apenas o valor da porta, no caso de UDP seria:
 
 ```dockerfile
 EXPOSE 5000/udp
@@ -92,11 +94,22 @@ EXPOSE 5000/udp
 
 ### ENTRYPOINT
 
-É o comando base onde serão apendados os comandos que você enviar no ínicio do Docker. Vamos ver um exemplo, suponha que seu Dockerfile tenha o ENTRYPOINT o comando `ls`. Ao rodar o Docker ele vai lidar tudo que tiver no `WORKDIR` mas se você colocar um comando de `*.txt` ele só vai listar os arquivos que tem extensão `.txt`.
+É o comando base onde serão apendados os comandos que você enviar no ínicio do Docker. Vamos ver um exemplo, suponha que seu Dockerfile tenha o ENTRYPOINT o comando `ls`. Ao rodar o Docker ele vai lidar tudo que tiver no `WORKDIR` mas se você colocar um comando de `*.txt` ele só vai listar os arquivos que tem extensão `.txt`. Exemplo:
+
+```
+$ docker run --entrypoint ls --workdir /etc/apt flask-example:0.0.1
+apt.conf.d
+preferences.d
+sources.list
+sources.list.d
+trusted.gpg.d
+$ docker run --entrypoint ls --workdir /etc/apt flask-example:0.0.1 sources.list
+sources.list
+```
 
 ### CMD
 
-Comando que será de fato executado no Docker dado o nosso `ENTRYPOINT`. No nosso caso foi só mandar o arquivo principal do Python.
+O `CMD` serão os argumentos passados ao seu `ENTRYPOINT`, no nosso caso é apenas no nome do arquivo Python que vamos executar pois o`ENTRYPOINT` é apenas `python`.
 
 # Executando o Dockerfile
 
@@ -183,6 +196,6 @@ bed4ed93779a        flask-example:0.0.1   "python app.py"     About a minute ago
 
 # Conclusão
 
-Com o fim dessa introdução ao Docker espero que você seja capaz se criar na sua máquina de trabalho réplica de parte ou toda sua infra de produção, por exemplo, criar um Dockerfile que gera a imagem do seu Docker com sua aplicação em Python e subir um banco MongoDB para ser usado pela aplicação. Recomendo agora que você pratique mais o que foi visto aqui e olhe a documentação pois muitas coisas foram omitidas por conta do escopo da introdução.   
+Com o fim dessa introdução ao Docker espero que você seja capaz de criar na sua máquina de trabalho réplica de parte ou toda sua infra de produção, por exemplo, criar um Dockerfile que gera a imagem do seu Docker com sua aplicação em Python e subir um banco MongoDB para ser usado pela aplicação. Recomendo agora que você pratique mais o que foi visto aqui e olhe a documentação pois muitas coisas foram omitidas por conta do escopo da introdução.   
 
 Abraços, João
