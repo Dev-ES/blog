@@ -119,9 +119,14 @@ Vou te dar uns benefícios:
 
 Se interessou com isso, vamos embora estudar [Docker](http://blog.dev-es.org/introducao-ao-docker-parte-1/)?
 
-
 # Conclusão
 
-Se uma tecnologia nova pode trazer mais benefícios que trabalho, e ela pode reduzir sua carga de trabalho, mesmo que tenha uma curva que pareça que está tendo mais trabalho inicialmente, pense no benefício de quando você conseguir dominar totalmente a tecnologia e pense nos seus concorrentes que gastam mais tempo que você e querem se manter `porquê não é o foco deles`, mas falando de mercado nosso, concorrência é só com sobrinho do primeiro período que levanta o e-commerce da tia e entra no stack overflow com problema de conexão com um banco de dados que não foi instanciado né :D.
+Uma tecnologia nova pode trazer mais benefícios do que trabalho, e pode reduzir sua carga de trabalho, mesmo que tenha uma curva que pareça que está tendo mais trabalho inicialmente. 
+
+Pense no benefício que você pode conseguir ao dominar totalmente a tecnologia e na vantagem que pode ter em relação aos seus concorrentes, que gastam mais tempo que você para realizar a mesma tarefa. E que querem se manter 
+`porquê não é o foco deles`. 
+
+Mas falando de mercado nosso, concorrência é só com sobrinho do primeiro período que levanta o e-commerce da tia, entra no 
+[Stack Overflow](https://pt.stackoverflow.com/) com problema de conexão com um banco de dados que não foi instanciado né :D.
 
 Bjundas
