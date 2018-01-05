@@ -37,7 +37,7 @@ Primeiramente, se você utiliza Windows deve baixar o [git-bash](https://git-scm
 
 Com uma interface bem amigável, é possível criar um repositório no GitHub da seguinte forma:
 
-![Criação de um repositório no GitHub](/images/git-tutorial/git-version.png)
+![Criação de um repositório no GitHub](/images/git-tutorial/git-new-repo.png)
 
 No final do processo, deve ser gerada uma url do tipo
 
