@@ -37,7 +37,7 @@ Primeiramente, se você utiliza Windows deve baixar o [git-bash](https://git-scm
 
 Com uma interface bem amigável, é possível criar um repositório no GitHub da seguinte forma:
 
-![Criação de um repositório no GitHub](/images/git-tutorial/git-new-repo.png)
+![Criação de um repositório no GitHub](/images/git-tutorial/git-new-repo.PNG)
 
 No final do processo, deve ser gerada uma url do tipo
 
@@ -76,10 +76,10 @@ Envia um 'pacote' contendo todas as modificações feitas e marcadas para o repo
 
 Resumindo..Tudo ocorre da seguinte foma:
 
-![Processo do git](/images/git-tutorial/git-process.png)
+![Processo do git](/images/git-tutorial/git-process.PNG)
 
 Ao final, podemos abrir o repositório criado anteriormente para verificar as alterações e esperamos o resultado como na imagem abaixo:
 
-![Repositório remoto atualizado com sucesso](/images/git-tutorial/git-repo-with-file.png)
+![Repositório remoto atualizado com sucesso](/images/git-tutorial/git-repo-with-file.PNG)
 
 Reparem na imagem acima, no canto direito das linhas destacadas, sempre existe um "(master)" nelas, o que significa que estamos no branch, ou ramificação, principal do nosso repositório e apesar de isso funcionar e resolver alguns casos pode acabar gerando problemas de merge (conflito) quando duas pessoas ou mais alteram a mesma linha de um arquivo. Por isso, é considerado uma "má prática" realizar commit diretamente no master e foi criada a abordagem de git flow, conhecida por (fork, branch, pull request). Ela não é seguida sempre a risca, muitas equipes adotam suas próprias práticas (geralmente apenas branch e pull request(PR) ). Assim, usando branches é possível trabalhar em conjunto muito melhor sem atrapalhar a feature do amiguinho :)
