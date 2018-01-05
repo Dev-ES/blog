@@ -83,3 +83,23 @@ Ao final, podemos abrir o repositório criado anteriormente para verificar as al
 ![Repositório remoto atualizado com sucesso](/images/git-tutorial/git-repo-with-file.PNG)
 
 Reparem na imagem acima, no canto direito das linhas destacadas, sempre existe um "(master)" nelas, o que significa que estamos no branch, ou ramificação, principal do nosso repositório e apesar de isso funcionar e resolver alguns casos pode acabar gerando problemas de merge (conflito) quando duas pessoas ou mais alteram a mesma linha de um arquivo. Por isso, é considerado uma "má prática" realizar commit diretamente no master e foi criada a abordagem de git flow, conhecida por (fork, branch, pull request). Ela não é seguida sempre a risca, muitas equipes adotam suas próprias práticas (geralmente apenas branch e pull request(PR) ). Assim, usando branches é possível trabalhar em conjunto muito melhor sem atrapalhar a feature do amiguinho :)
+
+Lembrando que é sempre uma boa ideia deixar as coisas o mais claro possível para você e outras pessoas na equipe, seja um commit, um branch ou um PR! Vamos adicionar um readme ao projeto usando uma nova branch pra isso.
+
+```bash
+    git checkout -b adicionando-readme-ao-projeto
+```
+
+Isso criar um novo branch e automaticamente muda para o mesmo, mas esse branch fica salvo apenas localmente, o que significa que precisamos monitorar esse branch remotamente, assim como nosso repositório
+
+```bash
+    git push -u origin adicionando-readme-ao-projeto
+```
+
+Todo o processo agora deve seguir como explicado acima, mas ao invés dos commits seguirem para o master eles irão para a nova branch criada, organizando melhor assim as coisas. Ao fim da nova feature, podemos criar um PR, que serve para repositórios onde você queira contribuir mas não tem permissão de escrita, pois assim uma pessoa irá precisar revisar o seu código e após isso adicionar a sua feature ao código já existente. Isso serve também para equipes onde todos tem permissão de escrita, mas a prática de code review (revisão de código em um PR) assegura uma melhor qualidade e entendimento de outras pessoas no código.
+
+Com uma fácil e amigável interface, o git torna o processo de pull request bem simples nos projetos, bastando depois apenas documentar brevemente o motivo da requisição do pull request bem como qual funcionalidade foi implementada ou bug corrigido
+
+![Tela antes do Pull request](/images/git-tutorial/screen-before-pr.PNG)
+
+Uma vez aprovado o Pull request, o ciclo começa novamente, puxando sempre um branch novo a partir do master e incorporando ao mesmo ao fim de cada feature nova!
