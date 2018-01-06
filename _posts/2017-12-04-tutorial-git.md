@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Introdução ao Git e GitHub
-description: breve tutorial sobre Git e GitHub, suas diferenças bem como funções básicas para todo dev.
-categories: tutoriais
+description: Breve tutorial sobre Git e GitHub, suas diferenças bem como funções básicas para todo dev.
+categories: github
 author: Gabriel Reis
 ---
 
@@ -18,7 +18,7 @@ várias vezes. Tudo parece muito bom, afinal, o gmail, pendrive ou
 dropbox sempre foram lugares confiáveis para guardar seus arquivos, até o dia em que começam as perguntas "não estou
 achando mais isso", "eu podia jurar que tinha mandado pro email" ou "meu pendrive sumiu com meu tcc junto"
 
-Pensando nisso e em uma maneira melhor de se organizar códigos o Git e o GitHub surgiram pre resolver esses problemas
+Pensando nisso e em uma maneira melhor de se organizar códigos o Git e o GitHub surgiram para resolver esses problemas
 com o versionamento de código, possibilitando o controle de todas as alterações realizadas em um arquivo e o
 compartilhamento de arquivos entre uma equipe muito mais simples, o que é imprescindível em uma equipe de dev's!
 
@@ -33,11 +33,15 @@ De que adianta utilizarmos apenas o Git para controlar as coisas se todas as alt
 local? o GitHub existe como um repositório externo, podendo ser privado ou aberto, facilitando assim o acesso por mais
 pessoas, além de servir também como um grande meio de apoiar toda a comunidade desenvolvedora com projetos open-source!
 
-Primeiramente, se você utiliza Windows deve baixar o [git-bash](https://git-scm.com/download/), se for usuário de linux ou mac, que apesar de normalmente já terem git por padrão, pode-se facilmente instalar com sudo apt-get install git.
+Primeiramente, se você utiliza Windows deve baixar o [git-bash](https://git-scm.com/download/), se for usuário de Linux ou Mac, que apesar de normalmente já terem git por padrão, pode-se facilmente instalar a partir do link acima.
 
 Com uma interface bem amigável, é possível criar um repositório no GitHub da seguinte forma:
 
 ![Criação de um repositório no GitHub](/images/git-tutorial/git-new-repo.PNG)
+
+Depois de criado, podemos obter uma url de acesso ao repositório assim
+
+![Criação de um repositório no GitHub](/images/git-tutorial/repo-copy-to-clipboard.PNG)
 
 No final do processo, deve ser gerada uma url do tipo
 
@@ -48,8 +52,7 @@ No final do processo, deve ser gerada uma url do tipo
 Com o nosso repositório remoto criado, podemos 'importar' ele localmente da seguinte forma utilizando o git-bash ou o terminal:
 
 ```bash
-   git clone
-   https://github.com/gabrielreisn/git-tutorial.git
+   git clone https://github.com/gabrielreisn/git-tutorial.git
 ```
 
 Onde será criada uma pasta 'git-tutorial' no diretório atual do bash. Nesse ponto todos os arquivos do projeto devem ser colocados nessa pasta e serão mapeados pelo git mais tarde. Assim, vou explicar todos os comandos usados de forma rápida e demonstrar um passo a passo logo depois
